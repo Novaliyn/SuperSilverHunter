@@ -13,7 +13,7 @@ config_version=5
 config/name="Super Silver hunter"
 run/main_scene="uid://ck0jcs2xow44g"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://images/icon.svg"
 
 [editor_plugins]
 

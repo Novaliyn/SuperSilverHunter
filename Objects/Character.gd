@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 const SPEED = 1000.0
 const JUMP_VELOCITY = -900.0
-
+var score = 0
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
