@@ -1,65 +1,62 @@
 [gd_scene load_steps=5 format=3 uid="uid://ck0jcs2xow44g"]
 
 [ext_resource type="PackedScene" uid="uid://flb8xv1teey1" path="res://Objects/Character.tscn" id="1_3anf8"]
-[ext_resource type="Texture2D" uid="uid://b4qm125sbwfqm" path="res://images/icon.svg" id="2_fhqol"]
 [ext_resource type="PackedScene" uid="uid://bv0uhxnwjx1el" path="res://Objects/Silver.tscn" id="3_fhqol"]
+[ext_resource type="Texture2D" uid="uid://b1uqdcqwbw6f7" path="res://images/Platform.png" id="3_iotdp"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dwyiq"]
-size = Vector2(824, 114)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nutv8"]
+size = Vector2(1526, 254.5)
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Character" parent="." instance=ExtResource("1_3anf8")]
 
-[node name="Platform1" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform1"]
-position = Vector2(1, 381)
-shape = SubResource("RectangleShape2D_dwyiq")
-
-[node name="Sprite2D" type="Sprite2D" parent="Platform1"]
-position = Vector2(-2.38419e-07, 381)
-scale = Vector2(6.42969, 0.882813)
-texture = ExtResource("2_fhqol")
-
-[node name="Platform2" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2"]
-position = Vector2(2473, 381)
-shape = SubResource("RectangleShape2D_dwyiq")
-
-[node name="Sprite2D" type="Sprite2D" parent="Platform2"]
-position = Vector2(2473, 381)
-scale = Vector2(6.42969, 0.882813)
-texture = ExtResource("2_fhqol")
-
-[node name="Platform3" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform3"]
-position = Vector2(1649, 381)
-shape = SubResource("RectangleShape2D_dwyiq")
-
-[node name="Sprite2D" type="Sprite2D" parent="Platform3"]
-position = Vector2(1648, 380)
-scale = Vector2(6.42969, 0.882813)
-texture = ExtResource("2_fhqol")
-
-[node name="Platform4" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform4"]
-position = Vector2(825, 381)
-shape = SubResource("RectangleShape2D_dwyiq")
-
-[node name="Sprite2D" type="Sprite2D" parent="Platform4"]
-position = Vector2(824, 381)
-scale = Vector2(6.42969, 0.882813)
-texture = ExtResource("2_fhqol")
-
 [node name="Silver" parent="." instance=ExtResource("3_fhqol")]
 position = Vector2(817, 66)
 
 [node name="Silver2" parent="." instance=ExtResource("3_fhqol")]
-position = Vector2(1643, 58)
+position = Vector2(3065, -197)
 
-[node name="Silver3" parent="." instance=ExtResource("3_fhqol")]
-position = Vector2(2492, 59)
+[node name="Platform" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
+position = Vector2(0, 626)
+shape = SubResource("RectangleShape2D_nutv8")
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform"]
+position = Vector2(5.72205e-06, 626.25)
+scale = Vector2(3.815, 3.40667)
+texture = ExtResource("3_iotdp")
+
+[node name="Platform2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2"]
+position = Vector2(1526, 626)
+shape = SubResource("RectangleShape2D_nutv8")
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform2"]
+position = Vector2(1526, 626)
+scale = Vector2(3.815, 3.40667)
+texture = ExtResource("3_iotdp")
+
+[node name="Platform3" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform3"]
+position = Vector2(3052, 371)
+shape = SubResource("RectangleShape2D_nutv8")
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform3"]
+position = Vector2(3052, 371)
+scale = Vector2(3.815, 3.40667)
+texture = ExtResource("3_iotdp")
+
+[node name="Platform4" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform4"]
+position = Vector2(3052, 626)
+shape = SubResource("RectangleShape2D_nutv8")
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform4"]
+position = Vector2(3052, 626)
+scale = Vector2(3.815, 3.40667)
+texture = ExtResource("3_iotdp")
