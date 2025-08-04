@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+class_name Character
 
 var SPEED = 1000.0
 var JUMP_VELOCITY = -800.0
@@ -7,8 +7,6 @@ var score = 0
 var lives = 3
 
 func _physics_process(delta: float) -> void:
-	if lives == 0:
-		print("you have failed. the mothership lives")
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 		
