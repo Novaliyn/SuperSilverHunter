@@ -10,12 +10,12 @@ size = Vector2(355.556, 355.556)
 script = ExtResource("1_7ig0a")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.125, 0.125)
+scale = Vector2(0.118, 0.118)
 texture = ExtResource("2_w7tjs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.13249e-06, -2.38419e-07)
-scale = Vector2(0.18, 0.18)
+scale = Vector2(0.17, 0.17)
 shape = SubResource("RectangleShape2D_7ig0a")
 
 [node name="Camera2D" type="Camera2D" parent="."]
