@@ -119,22 +119,12 @@ scale = Vector2(0.18, 0.18)
 position = Vector2(1792, -546)
 rotation = 1.5708
 scale = Vector2(0.18, 0.18)
-
-[node name="Spike2_1" parent="Spikes/Spike2" instance=ExtResource("3_fhqol")]
-position = Vector2(-1361.11, -0.000787735)
-
-[node name="Spike2_2" parent="Spikes/Spike2" instance=ExtResource("3_fhqol")]
-position = Vector2(-3550, -0.000523567)
+damage = 3
 
 [node name="Spike3" parent="Spikes" instance=ExtResource("3_fhqol")]
 position = Vector2(2484, -66)
 scale = Vector2(5.2, 0.18)
-
-[node name="Spike3_1" parent="Spikes/Spike3" instance=ExtResource("3_fhqol")]
-
-[node name="Spike3_2" parent="Spikes/Spike3" instance=ExtResource("3_fhqol")]
-
-[node name="Spike3_3" parent="Spikes/Spike3" instance=ExtResource("3_fhqol")]
+damage = 4
 
 [node name="Labels" type="CanvasGroup" parent="."]
 

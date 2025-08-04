@@ -13,6 +13,7 @@ config_version=5
 config/name="Super Silver hunter"
 run/main_scene="uid://ck0jcs2xow44g"
 config/features=PackedStringArray("4.4", "Forward Plus")
+boot_splash/image="uid://bj5yckhhr1o6m"
 config/icon="res://images/icon.svg"
 
 [editor_plugins]
