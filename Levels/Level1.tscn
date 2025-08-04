@@ -1,62 +1,159 @@
-[gd_scene load_steps=5 format=3 uid="uid://ck0jcs2xow44g"]
+[gd_scene load_steps=8 format=3 uid="uid://ck0jcs2xow44g"]
 
 [ext_resource type="PackedScene" uid="uid://flb8xv1teey1" path="res://Objects/Character.tscn" id="1_3anf8"]
 [ext_resource type="PackedScene" uid="uid://bv0uhxnwjx1el" path="res://Objects/Silver.tscn" id="3_fhqol"]
 [ext_resource type="Texture2D" uid="uid://b1uqdcqwbw6f7" path="res://images/Platform.png" id="3_iotdp"]
+[ext_resource type="Texture2D" uid="uid://cc8b57e56qd1d" path="res://images/Wall.png" id="4_iotdp"]
+[ext_resource type="PackedScene" uid="uid://d2ikeefah20xn" path="res://Objects/spike.tscn" id="5_nutv8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nutv8"]
 size = Vector2(1526, 254.5)
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_05pb0"]
+size = Vector2(260.25, 1550.25)
+
+[node name="Level" type="Node2D"]
 
 [node name="Character" parent="." instance=ExtResource("1_3anf8")]
 
-[node name="Silver" parent="." instance=ExtResource("3_fhqol")]
-position = Vector2(817, 66)
+[node name="NormalBlocks" type="CanvasGroup" parent="."]
 
-[node name="Silver2" parent="." instance=ExtResource("3_fhqol")]
-position = Vector2(3065, -197)
+[node name="Platforms" type="StaticBody2D" parent="NormalBlocks"]
 
-[node name="Platform" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NormalBlocks/Platforms"]
 position = Vector2(0, 626)
 shape = SubResource("RectangleShape2D_nutv8")
 
-[node name="Sprite2D" type="Sprite2D" parent="Platform"]
-position = Vector2(5.72205e-06, 626.25)
+[node name="Sprite2D" type="Sprite2D" parent="NormalBlocks/Platforms"]
+position = Vector2(6.16312e-05, 626)
 scale = Vector2(3.815, 3.40667)
 texture = ExtResource("3_iotdp")
 
-[node name="Platform2" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="NormalBlocks/Platforms"]
 position = Vector2(1526, 626)
 shape = SubResource("RectangleShape2D_nutv8")
 
-[node name="Sprite2D" type="Sprite2D" parent="Platform2"]
+[node name="Sprite2D2" type="Sprite2D" parent="NormalBlocks/Platforms"]
 position = Vector2(1526, 626)
 scale = Vector2(3.815, 3.40667)
 texture = ExtResource("3_iotdp")
 
-[node name="Platform3" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform3"]
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="NormalBlocks/Platforms"]
 position = Vector2(3052, 371)
 shape = SubResource("RectangleShape2D_nutv8")
 
-[node name="Sprite2D" type="Sprite2D" parent="Platform3"]
+[node name="Sprite2D3" type="Sprite2D" parent="NormalBlocks/Platforms"]
 position = Vector2(3052, 371)
 scale = Vector2(3.815, 3.40667)
 texture = ExtResource("3_iotdp")
 
-[node name="Platform4" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform4"]
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="NormalBlocks/Platforms"]
 position = Vector2(3052, 626)
 shape = SubResource("RectangleShape2D_nutv8")
 
-[node name="Sprite2D" type="Sprite2D" parent="Platform4"]
+[node name="Sprite2D4" type="Sprite2D" parent="NormalBlocks/Platforms"]
 position = Vector2(3052, 626)
 scale = Vector2(3.815, 3.40667)
 texture = ExtResource("3_iotdp")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="NormalBlocks/Platforms"]
+position = Vector2(-260, -2475.25)
+shape = SubResource("RectangleShape2D_nutv8")
+
+[node name="Sprite2D5" type="Sprite2D" parent="NormalBlocks/Platforms"]
+position = Vector2(-260, -2475.25)
+scale = Vector2(3.815, 3.40667)
+texture = ExtResource("3_iotdp")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="NormalBlocks/Platforms"]
+position = Vector2(1266, -2475.25)
+shape = SubResource("RectangleShape2D_nutv8")
+
+[node name="Sprite2D6" type="Sprite2D" parent="NormalBlocks/Platforms"]
+position = Vector2(1266, -2475.25)
+scale = Vector2(3.815, 3.40667)
+texture = ExtResource("3_iotdp")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="NormalBlocks/Platforms"]
+position = Vector2(2792, -2475.25)
+shape = SubResource("RectangleShape2D_nutv8")
+
+[node name="Sprite2D7" type="Sprite2D" parent="NormalBlocks/Platforms"]
+position = Vector2(2792, -2475.25)
+scale = Vector2(3.815, 3.40667)
+texture = ExtResource("3_iotdp")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="NormalBlocks/Platforms"]
+position = Vector2(4318, -2475.25)
+shape = SubResource("RectangleShape2D_nutv8")
+
+[node name="Sprite2D8" type="Sprite2D" parent="NormalBlocks/Platforms"]
+position = Vector2(4318, -2475.25)
+scale = Vector2(3.815, 3.40667)
+texture = ExtResource("3_iotdp")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="NormalBlocks/Platforms"]
+position = Vector2(4840, -637.25)
+shape = SubResource("RectangleShape2D_nutv8")
+
+[node name="Sprite2D9" type="Sprite2D" parent="NormalBlocks/Platforms"]
+position = Vector2(4840, -637.25)
+scale = Vector2(3.815, 3.40667)
+texture = ExtResource("3_iotdp")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="NormalBlocks/Platforms"]
+position = Vector2(5986, -382.25)
+shape = SubResource("RectangleShape2D_nutv8")
+
+[node name="Sprite2D10" type="Sprite2D" parent="NormalBlocks/Platforms"]
+position = Vector2(5986, -382.25)
+scale = Vector2(3.815, 3.40667)
+texture = ExtResource("3_iotdp")
+
+[node name="Walls" type="StaticBody2D" parent="NormalBlocks"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NormalBlocks/Walls"]
+position = Vector2(-893.125, -21.875)
+shape = SubResource("RectangleShape2D_05pb0")
+
+[node name="Sprite2D" type="Sprite2D" parent="NormalBlocks/Walls"]
+position = Vector2(-893, -21.5001)
+scale = Vector2(3.46667, 3.8775)
+texture = ExtResource("4_iotdp")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="NormalBlocks/Walls"]
+position = Vector2(-893.125, -1572.88)
+shape = SubResource("RectangleShape2D_05pb0")
+
+[node name="Sprite2D2" type="Sprite2D" parent="NormalBlocks/Walls"]
+position = Vector2(-893, -1572.5)
+scale = Vector2(3.46667, 3.8775)
+texture = ExtResource("4_iotdp")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="NormalBlocks/Walls"]
+position = Vector2(3944.88, -21.8751)
+shape = SubResource("RectangleShape2D_05pb0")
+
+[node name="Sprite2D3" type="Sprite2D" parent="NormalBlocks/Walls"]
+position = Vector2(3945, -21.5001)
+scale = Vector2(3.46667, 3.8775)
+texture = ExtResource("4_iotdp")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="NormalBlocks/Walls"]
+position = Vector2(3945, -425)
+shape = SubResource("RectangleShape2D_05pb0")
+
+[node name="Sprite2D4" type="Sprite2D" parent="NormalBlocks/Walls"]
+position = Vector2(3945, -424.5)
+scale = Vector2(3.46667, 3.8775)
+texture = ExtResource("4_iotdp")
+
+[node name="Specialty blocks" type="CanvasGroup" parent="."]
+
+[node name="Silver" parent="Specialty blocks" instance=ExtResource("3_fhqol")]
+position = Vector2(2948, -853)
+scale = Vector2(2, 2)
+
+[node name="Spike" parent="Specialty blocks" instance=ExtResource("5_nutv8")]
+position = Vector2(4816, -766)
+scale = Vector2(0.65, 0.65)
