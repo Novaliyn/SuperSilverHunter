@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bv86omlqgxj30" path="res://images/Tilemap64.png" id="1_fhqol"]
 [ext_resource type="PackedScene" uid="uid://c2kqqqsjlg8yi" path="res://Objects/spike.tscn" id="3_fhqol"]
 [ext_resource type="PackedScene" uid="uid://bv0uhxnwjx1el" path="res://Objects/Silver.tscn" id="4_iotdp"]
-[ext_resource type="PackedScene" uid="uid://c4iiik1f6sp3h" path="res://HealthPack.tscn" id="5_nutv8"]
+[ext_resource type="PackedScene" uid="uid://c4iiik1f6sp3h" path="res://Objects/HealthPack.tscn" id="5_nutv8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3anf8"]
 texture = ExtResource("1_fhqol")
@@ -122,11 +122,9 @@ scale = Vector2(0.18, 0.18)
 
 [node name="Spike2_1" parent="Spikes/Spike2" instance=ExtResource("3_fhqol")]
 position = Vector2(-1361.11, -0.000787735)
-scale = Vector2(1, 1)
 
 [node name="Spike2_2" parent="Spikes/Spike2" instance=ExtResource("3_fhqol")]
 position = Vector2(-3550, -0.000523567)
-scale = Vector2(1, 1)
 
 [node name="Spike3" parent="Spikes" instance=ExtResource("3_fhqol")]
 position = Vector2(2484, -66)
