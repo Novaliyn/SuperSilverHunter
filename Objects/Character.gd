@@ -1,8 +1,8 @@
 extends CharacterBody2D
 class_name Character
 
-var SPEED = 1000.0
-var JUMP_VELOCITY = -800.0
+var SPEED = 600.0
+var JUMP_VELOCITY = -500.0
 var score = 0
 var lives = 3
 
