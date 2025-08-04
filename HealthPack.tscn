@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4iiik1f6sp3h"]
+
+[ext_resource type="Script" uid="uid://cwcloe2sa1v0b" path="res://healthpack.gd" id="1_h0h05"]
+[ext_resource type="Texture2D" uid="uid://brd0s7rbofqws" path="res://images/HealthPack.png" id="2_tvcp0"]
+
+[node name="Healthpack" type="Area2D"]
+script = ExtResource("1_h0h05")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(40.325, -38.325)
+scale = Vector2(5.05273, 4.74023)
+polygon = PackedVector2Array(-2, -8, 2, -8, 2, -2, 8, -2, 8, 2, 2, 2, 2, 8, -2, 8, -2, 2, -8, 2, -8, -2, -2, -2)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(40, -36)
+scale = Vector2(0.6875, 0.65625)
+texture = ExtResource("2_tvcp0")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
