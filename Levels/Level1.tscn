@@ -78,7 +78,7 @@ tile_map_data = PackedByteArray("AAD8////AQABAAEAAAD7////AQABAAEAAAD6////AQABAAE
 tile_set = SubResource("TileSet_05pb0")
 
 [node name="Character" parent="." instance=ExtResource("1_3anf8")]
-position = Vector2(-255, -1936)
+position = Vector2(-200, -309)
 
 [node name="Spikes" type="CanvasGroup" parent="."]
 

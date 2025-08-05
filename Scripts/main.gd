@@ -7,8 +7,8 @@ var levelInstance : Node2D
 
 
 func _ready():
+	loadNewLevel(Global.Level)
 	Signaler.connect("changeLevel", loadNewLevel)
-	loadNewLevel(1)
 
 
 func unloadLevel():

@@ -3,8 +3,6 @@ class_name Character
 
 var SPEED = 600.0
 var JUMP_VELOCITY = -500.0
-var score = 0
-var lives = 3
 var Jump = false
 
 func _physics_process(delta: float) -> void:
