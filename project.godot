@@ -16,6 +16,10 @@ config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/image="uid://bj5yckhhr1o6m"
 config/icon="res://images/icon.svg"
 
+[autoload]
+
+Signaler="*res://Scripts/Signaler.gd"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
