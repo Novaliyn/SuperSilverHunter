@@ -13,8 +13,7 @@ script = ExtResource("1_eb2oq")
 shape = SubResource("CircleShape2D_kayo8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-0.749998, -1)
-scale = Vector2(1.78906, 1.80859)
+scale = Vector2(1, 1.011)
 texture = ExtResource("2_kayo8")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
