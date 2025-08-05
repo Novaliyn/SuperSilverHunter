@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cc5ofd3heqj7c" path="res://Scripts/silver.gd" id="1_vyng1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nukw1"]
-radius = 183.011
+radius = 57.2189
 
 [node name="Silver" type="Area2D"]
 script = ExtResource("1_vyng1")
@@ -13,8 +13,8 @@ script = ExtResource("1_vyng1")
 shape = SubResource("CircleShape2D_nukw1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-0.999996, -7.62939e-06)
-scale = Vector2(2.90625, 2.90625)
+position = Vector2(-1.19209e-07, -5.96046e-08)
+scale = Vector2(2, 2.065)
 texture = ExtResource("1_u6rye")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://17jlpnassayg"]
+
+[ext_resource type="Script" uid="uid://duy6kb7qapkhe" path="res://Scripts/gravity_orb.gd" id="1_eb2oq"]
+[ext_resource type="Texture2D" uid="uid://0k8v4li05bw4" path="res://images/GravityOrb.png" id="2_kayo8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kayo8"]
+radius = 24.0
+
+[node name="Gravity Orb" type="Area2D"]
+script = ExtResource("1_eb2oq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_kayo8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.749998, -1)
+scale = Vector2(1.78906, 1.80859)
+texture = ExtResource("2_kayo8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

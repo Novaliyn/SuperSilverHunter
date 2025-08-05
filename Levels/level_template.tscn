@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://bul5abqt87imk"]
+[gd_scene load_steps=12 format=4 uid="uid://bul5abqt87imk"]
 
 [ext_resource type="Texture2D" uid="uid://ymr1iw76ibv7" path="res://images/Background.png" id="1_02uie"]
 [ext_resource type="Script" uid="uid://xqs3vh6dlpti" path="res://Scripts/level_template.gd" id="1_fksqx"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c2kqqqsjlg8yi" path="res://Objects/spike.tscn" id="4_4p0jq"]
 [ext_resource type="PackedScene" uid="uid://bv0uhxnwjx1el" path="res://Objects/silver.tscn" id="5_qcxce"]
 [ext_resource type="PackedScene" uid="uid://c4iiik1f6sp3h" path="res://Objects/healthpack.tscn" id="6_4autd"]
+[ext_resource type="PackedScene" uid="uid://17jlpnassayg" path="res://Objects/gravity_orb.tscn" id="8_4p0jq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fksqx"]
 texture = ExtResource("1_rshia")
@@ -606,6 +607,11 @@ position = Vector2(-271, -217)
 
 [node name="Healthpack" parent="Healthpacks" instance=ExtResource("6_4autd")]
 position = Vector2(260, -48)
+
+[node name="GravityOrbs" type="CanvasGroup" parent="."]
+
+[node name="Gravity Orb" parent="GravityOrbs" instance=ExtResource("8_4p0jq")]
+position = Vector2(232, -273)
 
 [node name="ExitDoor" parent="." instance=ExtResource("2_02uie")]
 position = Vector2(317, -194)

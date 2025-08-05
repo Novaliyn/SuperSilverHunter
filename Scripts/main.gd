@@ -18,6 +18,7 @@ func unloadLevel():
    
 func loadNewLevel(levelnumber):
 	unloadLevel()
+	Global.GravDirection = 1
 	var levelPath : String
 	if levelnumber is int:
 		levelPath = "res://Levels/Level%s.tscn" % str(levelnumber)
