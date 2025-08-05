@@ -6,11 +6,9 @@ extends Node
 var levelInstance : Node2D
 
 
-
-
-
-
-
+func _ready():
+	Signaler.connect("changeLevel", loadNewLevel)
+	loadNewLevel(1)
 
 
 func unloadLevel():

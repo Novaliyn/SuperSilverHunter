@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=4 uid="uid://bul5abqt87imk"]
+[gd_scene load_steps=11 format=4 uid="uid://bul5abqt87imk"]
 
 [ext_resource type="Texture2D" uid="uid://ymr1iw76ibv7" path="res://images/Background.png" id="1_02uie"]
+[ext_resource type="Script" uid="uid://xqs3vh6dlpti" path="res://Scripts/level_template.gd" id="1_fksqx"]
 [ext_resource type="Texture2D" uid="uid://bv86omlqgxj30" path="res://images/Tilemap64.png" id="1_rshia"]
 [ext_resource type="PackedScene" uid="uid://4n1c43i8d1ig" path="res://Objects/exit_door.tscn" id="2_02uie"]
 [ext_resource type="PackedScene" uid="uid://flb8xv1teey1" path="res://Objects/Character.tscn" id="3_fksqx"]
@@ -571,6 +572,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_862ii")
 
 [node name="LevelTemplate" type="Node2D"]
+script = ExtResource("1_fksqx")
 
 [node name="Background" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(10000, 10000)
