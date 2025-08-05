@@ -13,3 +13,13 @@ features:<br>
 game engine: Godot<br>
 experience: Nothing!<br>
 other notes: Be careful.
+
+10-HOUR UPDATE
+github repo: https://github.com/Novaliyn/SuperSilverHunter
+itch.io link: Not yet!
+features added:
+- Movement, jumping, double jumping.
+- spikes, coins, healthpacks
+- Door. 
+most challenging: really just trying to get level changine to work.
+next up: finish level changing, add levels, gravity stuff. 
