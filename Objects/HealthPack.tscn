@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c4iiik1f6sp3h"]
 
-[ext_resource type="Script" uid="uid://cwcloe2sa1v0b" path="res://Objects/healthpack.gd" id="1_h0h05"]
+[ext_resource type="Script" uid="uid://cwcloe2sa1v0b" path="res://Scripts/healthpack.gd" id="1_h0h05"]
 [ext_resource type="Texture2D" uid="uid://brd0s7rbofqws" path="res://images/HealthPack.png" id="2_tvcp0"]
 
 [node name="Healthpack" type="Area2D"]

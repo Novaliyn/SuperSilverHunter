@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://4n1c43i8d1ig"]
 
-[ext_resource type="Script" uid="uid://brgj0vdbjp2me" path="res://Objects/exit_door.gd" id="1_tdtes"]
+[ext_resource type="Script" uid="uid://brgj0vdbjp2me" path="res://Scripts/exit_door.gd" id="1_tdtes"]
 [ext_resource type="Texture2D" uid="uid://d0lljc6qlkhg8" path="res://images/ExitDoor.png" id="2_aumtq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aumtq"]

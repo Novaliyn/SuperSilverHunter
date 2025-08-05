@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c2kqqqsjlg8yi"]
 
-[ext_resource type="Script" uid="uid://d17g6jnj3gwae" path="res://Objects/spike.gd" id="1_rari4"]
+[ext_resource type="Script" uid="uid://d17g6jnj3gwae" path="res://Scripts/spike.gd" id="1_rari4"]
 [ext_resource type="Texture2D" uid="uid://djg42vaj50tkj" path="res://images/Spike.png" id="1_twdue"]
 
 [node name="Spike" type="Area2D"]
