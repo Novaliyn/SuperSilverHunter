@@ -573,6 +573,21 @@ tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_m3ha0")
 
+[sub_resource type="Animation" id="Animation_80cou"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MovingPlatform:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(8547, -1824)]
+}
+
 [sub_resource type="Animation" id="Animation_lf2mf"]
 resource_name = "move"
 length = 4.0
@@ -588,21 +603,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(8547, -1824), Vector2(9752, -1824)]
-}
-
-[sub_resource type="Animation" id="Animation_80cou"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("MovingPlatform:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(8547, -1824)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xosfc"]
@@ -742,6 +742,13 @@ offset_right = 344.0
 offset_bottom = -1519.0
 text = "Wait. That Blue orb swaps Your Gravity?!?!? Hurry! Get more silver!"
 
+[node name="MVPLT" type="Label" parent="Labels"]
+offset_left = 8352.0
+offset_top = -1996.0
+offset_right = 8684.0
+offset_bottom = -1965.0
+text = "OHHH, IS THAT A MOVING PLATFORM?!?!?!?"
+
 [node name="Silver" type="CanvasGroup" parent="."]
 
 [node name="Silver" parent="Silver" instance=ExtResource("5_x7rwe")]
@@ -841,10 +848,12 @@ Active = 1
 [node name="Gravity Orb5" parent="GravityOrbs" instance=ExtResource("8_vd23k")]
 position = Vector2(8118, -2397)
 
-[node name="MovingPlatform" parent="." instance=ExtResource("9_x7rwe")]
+[node name="MovingPlatforms" type="CanvasGroup" parent="."]
+
+[node name="MovingPlatform" parent="MovingPlatforms" instance=ExtResource("9_x7rwe")]
 position = Vector2(8547, -1824)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MovingPlatforms"]
 libraries = {
 &"": SubResource("AnimationLibrary_xosfc")
 }

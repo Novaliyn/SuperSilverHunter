@@ -2,4 +2,4 @@ extends Node2D
 
 
 func _ready():
-	$AnimationPlayer.play("move")
+	$MovingPlatforms/AnimationPlayer.play("move")
