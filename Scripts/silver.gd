@@ -5,4 +5,4 @@ func _on_body_entered(body: Node2D) -> void:
 	if body is Character:
 		Global.score += value
 		self.queue_free()
-		print(Global.score)
+		Signaler.UpdateScore.emit()
