@@ -1,7 +1,9 @@
 # SuperSilverHunter
 First Godot Game. Super cool. Silver is the goal!<br>
 
-[![Play Super Silver Hunter](https://img.itch.zone/aW1nLzIyNjI3NTU5LnBuZw==/original/REYOkY.png)](https://novaliyn.itch.io/supersilverhunter)
+[![Play Super Silver Hunter](https://img.itch.zone/aW1nLzIyNjI3NTU5LnBuZw==/original/REYOkY.png)](https://novaliyn.itch.io/supersilverhunter)<br>
+Play The Game^^^ ( Click the Coin )
+
 
 GAME IDEA<br>
 name of game: Super Silver Hunter<br>
