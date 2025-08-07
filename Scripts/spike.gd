@@ -9,5 +9,5 @@ func _on_body_entered(body: Node2D) -> void:
 			Global.GravDirection = 1
 			Global.lives = 3
 			Global.score = 0
-			call_deferred("Signaler.changeLevel.emit", Global.Level)
+			Signaler.changeLevel.emit(Global.Level)
 		Signaler.UpdateScore.emit()
