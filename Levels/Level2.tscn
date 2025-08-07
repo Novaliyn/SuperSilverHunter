@@ -721,33 +721,33 @@ damage = 5
 [node name="Labels" type="CanvasGroup" parent="."]
 
 [node name="Maze" type="Label" parent="Labels"]
-offset_left = 2130.0
-offset_top = -2354.0
-offset_right = 2330.0
-offset_bottom = -2323.0
-text = "Welcome to... THE MAZE!"
+offset_left = 1937.0
+offset_top = -2377.0
+offset_right = 2612.0
+offset_bottom = -2346.0
+text = "The System Lords seem to have anticipated an attack... this is nothing but a giant maze!"
 
 [node name="Gravity?" type="Label" parent="Labels"]
-offset_left = -935.0
-offset_top = -808.0
-offset_right = -864.0
-offset_bottom = -785.0
+offset_left = -944.0
+offset_top = -838.0
+offset_right = -873.0
+offset_bottom = -815.0
 text = "Oh?..."
 
 [node name="Gravity block" type="Label" parent="Labels/Gravity?"]
 layout_mode = 0
-offset_left = -167.0
-offset_top = -1542.0
-offset_right = 344.0
-offset_bottom = -1519.0
-text = "Wait. That Blue orb swaps Your Gravity?!?!? Hurry! Get more silver!"
+offset_left = -323.0
+offset_top = -1557.0
+offset_right = 290.0
+offset_bottom = -1534.0
+text = "The mysterious blue orb seems to be some sort of gravity inversion technology."
 
 [node name="MVPLT" type="Label" parent="Labels"]
 offset_left = 8352.0
 offset_top = -1996.0
 offset_right = 8684.0
 offset_bottom = -1965.0
-text = "OHHH, IS THAT A MOVING PLATFORM?!?!?!?"
+text = "This levitating segment of the floor seems to be the only way to proceed. "
 
 [node name="Silver" type="CanvasGroup" parent="."]
 

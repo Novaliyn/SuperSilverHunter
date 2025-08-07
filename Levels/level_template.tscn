@@ -575,9 +575,6 @@ sources/0 = SubResource("TileSetAtlasSource_fksqx")
 [node name="LevelTemplate" type="Node2D"]
 script = ExtResource("1_fksqx")
 
-[node name="Character" parent="." instance=ExtResource("3_fksqx")]
-position = Vector2(97, -268)
-
 [node name="Background" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(10000, 10000)
 offset_left = -3188.0
@@ -590,6 +587,9 @@ stretch_mode = 1
 [node name="GamelayerTilemap" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAAAP3/AAAAAAAAAAAAAP7/AAAAAAEAAAAAAP//AAAAAAIAAAABAP3/AAABAAAAAAABAP7/AAABAAEAAAABAP//AAABAAIAAAACAP3/AAACAAAAAAACAP7/AAACAAEAAAACAP//AAACAAIAAAA=")
 tile_set = SubResource("TileSet_4p0jq")
+
+[node name="Character" parent="." instance=ExtResource("3_fksqx")]
+position = Vector2(97, -268)
 
 [node name="Spikes" type="CanvasGroup" parent="."]
 

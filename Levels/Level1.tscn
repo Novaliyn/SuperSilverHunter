@@ -133,22 +133,21 @@ offset_left = -453.0
 offset_top = -425.0
 offset_right = 126.0
 offset_bottom = -402.0
-text = "Welcome, Collect all the silver coins. Destroy the power Core. Then ESCAPE!"
+text = "Welcome aboard the last Goa'uld Ha'tak. Collect silver, sabotage the ship, and escape with your life!"
 
 [node name="CoinUp" type="Label" parent="Labels"]
 offset_left = -878.0
 offset_top = -252.0
 offset_right = -611.0
 offset_bottom = -218.0
-text = "Pssst. There is a coin Up there ^^^"
+text = "Sensors indicate a coin within this area. ^^^"
 
 [node name="Keybinds" type="Label" parent="Labels"]
 offset_left = -74.0
 offset_top = -256.0
 offset_right = 187.0
 offset_bottom = -200.0
-text = "Use the A and D keys to move! 
-Use the Space Bar to Jump!"
+text = "Press A and D to maneuver left and right. Jump with space."
 autowrap_mode = 3
 
 [node name="Keybinds2" type="Label" parent="Labels"]
@@ -156,7 +155,7 @@ offset_left = 574.0
 offset_top = -439.0
 offset_right = 835.0
 offset_bottom = -383.0
-text = "To wall jump, press the spacebar while touching the wall!"
+text = "Wall jump by jumping while in contact with a wall."
 autowrap_mode = 3
 
 [node name="Keybinds3" type="Label" parent="Labels"]
@@ -164,7 +163,7 @@ offset_left = 3790.0
 offset_top = -2623.0
 offset_right = 4107.0
 offset_bottom = -2548.0
-text = "Did you know? If you Click the spacebar in the air, You can take another jump!!"
+text = "Jumping while airborne will propell you further vertically."
 autowrap_mode = 3
 
 [node name="Spikes" type="Label" parent="Labels"]
@@ -172,15 +171,15 @@ offset_left = 791.0
 offset_top = -815.0
 offset_right = 1242.0
 offset_bottom = -759.0
-text = "WATCHOUT ITS SPIKES. Don't touch it. you will lose a life!"
+text = "Beware, these new Goa'uld hak'tyl traps mean to take your life!"
 autowrap_mode = 3
 
 [node name="Fall" type="Label" parent="Labels"]
 offset_left = 2583.0
 offset_top = -620.0
-offset_right = 2936.0
+offset_right = 3055.0
 offset_bottom = -588.0
-text = "CAREFUL. IF you fall. It's INSTANT FAILURE!"
+text = "Watch your step! The floor below bears a massive hak'tyl."
 autowrap_mode = 3
 
 [node name="Hiddencoin" type="Label" parent="Labels"]
@@ -188,7 +187,7 @@ offset_left = 972.0
 offset_top = -250.0
 offset_right = 1220.0
 offset_bottom = -194.0
-text = "Congradulations! You have found a Hidden Piece of SIlver!"
+text = "Excellent! You have discovered hidden silver."
 autowrap_mode = 3
 
 [node name="Exit" type="Label" parent="Labels"]
@@ -196,7 +195,7 @@ offset_left = -55.0
 offset_top = -2018.0
 offset_right = 262.0
 offset_bottom = -1943.0
-text = "You have made it to the end on Level1! Keep it up! The silver awaits! (And the mothership of course)"
+text = "Excellent work! Board the transportation rings and continue your infiltration!"
 autowrap_mode = 3
 
 [node name="Silver" type="CanvasGroup" parent="."]
