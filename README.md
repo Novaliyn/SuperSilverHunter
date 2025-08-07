@@ -1,6 +1,8 @@
 # SuperSilverHunter
 First Godot Game. Super cool. Silver is the goal!<br>
 
+<iframe frameborder="0" src="https://itch.io/embed/3795600?border_width=5&amp;bg_color=000000&amp;fg_color=ffffff&amp;link_color=de00bc&amp;border_color=9728d3" width="560" height="175"><a href="https://novaliyn.itch.io/supersilverhunter">Super Silver Hunter by Novaliyn</a></iframe>
+
 GAME IDEA<br>
 name of game: Super Silver Hunter<br>
 type of game: platformer<br>
