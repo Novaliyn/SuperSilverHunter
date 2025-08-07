@@ -12,6 +12,7 @@ func _ready():
 	loadNewLevel(Global.Level)
 	Signaler.connect("changeLevel", loadNewLevel)
 	Signaler.connect("UpdateScore", updateScore)
+	Signaler.connect("GameEnd", endGame)
 
 
 func unloadLevel():
@@ -29,7 +30,7 @@ func loadNewLevel(levelnumber):
 		var levelResource : PackedScene = load(levelPath)
 		if levelResource:
 			levelInstance = levelResource.instantiate()
-			gamelevel.add_child(levelInstance)
+			gamelevel.call_deferred("add_child", levelInstance)
 
 func updateScore():
 	if Global.lives == 5:
@@ -37,3 +38,6 @@ func updateScore():
 	else:
 		lives.text = str(str(Global.lives)+' Lives')
 	silver.text = str(str(Global.score)+' Silver')
+
+func endGame():
+	loadNewLevel(0)
