@@ -1,19 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://c4iiik1f6sp3h"]
+[gd_scene load_steps=4 format=3 uid="uid://c4iiik1f6sp3h"]
 
 [ext_resource type="Script" uid="uid://cwcloe2sa1v0b" path="res://Scripts/healthpack.gd" id="1_h0h05"]
 [ext_resource type="Texture2D" uid="uid://brd0s7rbofqws" path="res://images/HealthPack.png" id="2_tvcp0"]
 
-[node name="Healthpack" type="Area2D"]
-script = ExtResource("1_h0h05")
+[sub_resource type="CircleShape2D" id="CircleShape2D_hv2jg"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(40.325, -38.325)
-scale = Vector2(5.05273, 4.74023)
-polygon = PackedVector2Array(-2, -8, 2, -8, 2, -2, 8, -2, 8, 2, 2, 2, 2, 8, -2, 8, -2, 2, -8, 2, -8, -2, -2, -2)
+[node name="Healthpack" type="Area2D"]
+scale = Vector2(2.6, 2.6)
+script = ExtResource("1_h0h05")
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(40, -36)
-scale = Vector2(0.6875, 0.65625)
+position = Vector2(10, -10)
+scale = Vector2(1.375, 1.375)
 texture = ExtResource("2_tvcp0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, -10)
+shape = SubResource("CircleShape2D_hv2jg")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
