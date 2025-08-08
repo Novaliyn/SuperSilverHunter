@@ -3,8 +3,8 @@ extends Node
 
 @onready var hud: Control = $HUD
 @onready var gamelevel: Node2D = $Gamelevel
-@onready var lives: Label = $HUD/CanvasLayer/Lives
-@onready var silver: Label = $HUD/CanvasLayer/Silver
+@onready var lives: Label = $HUD/HBoxContainer/Lives
+@onready var silver: Label = $HUD/HBoxContainer2/Silver
 var levelInstance : Node2D
 
 
