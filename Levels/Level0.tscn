@@ -70,7 +70,7 @@ tile_map_data = PackedByteArray("AAAAAP3/AAABAAAAAAAAAP7/AAABAAEAAAAAAP//AAABAAI
 tile_set = SubResource("TileSet_4p0jq")
 
 [node name="Character" parent="." instance=ExtResource("3_u74sm")]
-position = Vector2(462, -224)
+position = Vector2(544, -226)
 
 [node name="Silver" type="CanvasGroup" parent="."]
 
@@ -119,7 +119,8 @@ position = Vector2(-309, -1054)
 Active = 1
 
 [node name="ExitDoor" parent="." instance=ExtResource("6_3yu0n")]
-position = Vector2(507, -961)
+position = Vector2(587, -1088)
+rotation = 3.14159
 
 [node name="Stargate" parent="." instance=ExtResource("7_h2dl5")]
 position = Vector2(482, -192)

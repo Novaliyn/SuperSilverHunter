@@ -74,7 +74,7 @@ tile_map_data = PackedByteArray("AAD8////AQABAAEAAAD7////AQABAAEAAAD6////AQABAAE
 tile_set = SubResource("TileSet_05pb0")
 
 [node name="Character" parent="." instance=ExtResource("1_3anf8")]
-position = Vector2(-229, -279)
+position = Vector2(-182, -233)
 
 [node name="Spikes" type="CanvasGroup" parent="."]
 
@@ -187,10 +187,11 @@ text = "Excellent! You have discovered hidden silver."
 autowrap_mode = 3
 
 [node name="Exit" type="Label" parent="Labels"]
-offset_left = -55.0
-offset_top = -2018.0
-offset_right = 262.0
-offset_bottom = -1943.0
+offset_left = -74.0
+offset_top = -1977.0
+offset_right = 367.0
+offset_bottom = -1902.0
+scale = Vector2(0.928194, 0.908779)
 text = "Excellent work! Board the transportation rings and continue your infiltration!"
 autowrap_mode = 3
 
@@ -235,6 +236,9 @@ position = Vector2(2310, -2052)
 
 [node name="GravityOrbs" type="CanvasGroup" parent="."]
 
+[node name="Door" parent="." instance=ExtResource("6_05pb0")]
+position = Vector2(-216, -194)
+Active = 0
+
 [node name="ExitDoor" parent="." instance=ExtResource("6_05pb0")]
-position = Vector2(320, -1793)
-scale = Vector2(2, 2)
+position = Vector2(430, -1792)

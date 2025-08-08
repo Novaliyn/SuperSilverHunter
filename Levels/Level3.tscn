@@ -355,7 +355,7 @@ tile_map_data = PackedByteArray("AADy/xsAAAAAAAAAAADy/xwAAAAAAAEAAADy/x0AAAAAAAI
 tile_set = SubResource("TileSet_4p0jq")
 
 [node name="Character" parent="." instance=ExtResource("2_hy5j1")]
-position = Vector2(-762, 1659)
+position = Vector2(-825, 1692)
 
 [node name="Spikes" type="CanvasGroup" parent="."]
 
@@ -453,7 +453,7 @@ position = Vector2(8276, -413)
 position = Vector2(9053, 1117)
 
 [node name="Door" parent="." instance=ExtResource("9_t21pv")]
-position = Vector2(-891, 1728)
+position = Vector2(-856, 1728)
 Active = 0
 
 [node name="Stargate" parent="." instance=ExtResource("11_xxxi4")]
