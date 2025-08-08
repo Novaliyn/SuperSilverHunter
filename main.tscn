@@ -26,29 +26,29 @@ theme = SubResource("Theme_1bvp3")
 offset_right = 234.0
 offset_bottom = 46.0
 
-[node name="Lives" type="Label" parent="HUD/HBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 33
-text = "3 Lives"
-
 [node name="lives" type="TextureRect" parent="HUD/HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("2_h2yge")
 expand_mode = 1
 stretch_mode = 4
 
+[node name="Lives" type="Label" parent="HUD/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 33
+text = "3 Lives"
+
 [node name="HBoxContainer2" type="HBoxContainer" parent="HUD"]
 offset_right = 234.0
 offset_bottom = 46.0
 alignment = 2
-
-[node name="Silver" type="Label" parent="HUD/HBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 33
-text = "0 Silver"
 
 [node name="silver" type="TextureRect" parent="HUD/HBoxContainer2"]
 layout_mode = 2
 texture = ExtResource("3_1bvp3")
 expand_mode = 1
 stretch_mode = 4
+
+[node name="Silver" type="Label" parent="HUD/HBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 33
+text = "0 Silver"
