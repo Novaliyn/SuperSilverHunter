@@ -1,8 +1,0 @@
-# Godot 4+ specific ignores
-.godot/
-/android/
-/addons/
-/.editorconfig
-/.gitattrubutes
-/Completed/
-/export_presets.cfg
