@@ -22,38 +22,28 @@ offset_right = 40.0
 offset_bottom = 40.0
 theme = SubResource("Theme_1bvp3")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="HUD"]
-
-[node name="Lives" type="Label" parent="HUD/CanvasLayer"]
-offset_left = 71.0
-offset_top = 8.0
+[node name="HBoxContainer" type="HBoxContainer" parent="HUD"]
 offset_right = 234.0
-offset_bottom = 50.0
+offset_bottom = 46.0
+
+[node name="Lives" type="Label" parent="HUD/HBoxContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 33
 text = "3 Lives"
 
-[node name="Silver" type="Label" parent="HUD/CanvasLayer"]
-offset_left = 980.0
-offset_top = 7.0
-offset_right = 1095.0
-offset_bottom = 53.0
+[node name="Silver" type="Label" parent="HUD/HBoxContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 33
 text = "0 Silver"
 
-[node name="lives" type="TextureRect" parent="HUD/CanvasLayer"]
-offset_left = 18.0
-offset_top = 4.0
-offset_right = 67.0
-offset_bottom = 50.0
+[node name="lives" type="TextureRect" parent="HUD/HBoxContainer"]
+layout_mode = 2
 texture = ExtResource("2_h2yge")
 expand_mode = 1
 stretch_mode = 4
 
-[node name="silver" type="TextureRect" parent="HUD/CanvasLayer"]
-offset_left = 1100.0
-offset_top = 8.0
-offset_right = 1149.0
-offset_bottom = 54.0
+[node name="silver" type="TextureRect" parent="HUD/HBoxContainer"]
+layout_mode = 2
 texture = ExtResource("3_1bvp3")
 expand_mode = 1
 stretch_mode = 4
