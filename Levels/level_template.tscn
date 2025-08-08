@@ -1,56 +1,86 @@
 [gd_scene load_steps=11 format=4 uid="uid://bul5abqt87imk"]
 
-[ext_resource type="Texture2D" uid="uid://ymr1iw76ibv7" path="res://images/Background.png" id="1_02uie"]
-[ext_resource type="Texture2D" uid="uid://bv86omlqgxj30" path="res://images/Tilemap64.png" id="1_rshia"]
-[ext_resource type="PackedScene" uid="uid://4n1c43i8d1ig" path="res://Objects/exit_door.tscn" id="2_02uie"]
-[ext_resource type="PackedScene" uid="uid://flb8xv1teey1" path="res://Objects/Character.tscn" id="3_fksqx"]
-[ext_resource type="PackedScene" uid="uid://c2kqqqsjlg8yi" path="res://Objects/spike.tscn" id="4_4p0jq"]
-[ext_resource type="PackedScene" uid="uid://bv0uhxnwjx1el" path="res://Objects/silver.tscn" id="5_qcxce"]
-[ext_resource type="PackedScene" uid="uid://c4iiik1f6sp3h" path="res://Objects/healthpack.tscn" id="6_4autd"]
-[ext_resource type="PackedScene" uid="uid://17jlpnassayg" path="res://Objects/gravity_orb.tscn" id="8_4p0jq"]
+[ext_resource type="Texture2D" uid="uid://ymr1iw76ibv7" path="res://images/Background.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bv86omlqgxj30" path="res://images/Tilemap64.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://flb8xv1teey1" path="res://Objects/Character.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://c2kqqqsjlg8yi" path="res://Objects/spike.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://bv0uhxnwjx1el" path="res://Objects/silver.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://c4iiik1f6sp3h" path="res://Objects/healthpack.tscn" id="6"]
+[ext_resource type="PackedScene" uid="uid://17jlpnassayg" path="res://Objects/gravity_orb.tscn" id="7"]
+[ext_resource type="PackedScene" uid="uid://4n1c43i8d1ig" path="res://Objects/exit_door.tscn" id="8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fksqx"]
-texture = ExtResource("1_rshia")
+texture = ExtResource("2")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+0:0/0/script = null
 1:0/0 = 0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+1:0/0/script = null
 2:0/0 = 0
 2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+2:0/0/script = null
 3:0/0 = 0
+3:0/0/script = null
 5:0/0 = 0
+5:0/0/script = null
 7:0/0 = 0
+7:0/0/script = null
 9:0/0 = 0
+9:0/0/script = null
 0:1/0 = 0
 0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+0:1/0/script = null
 1:1/0 = 0
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+1:1/0/script = null
 2:1/0 = 0
 2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+2:1/0/script = null
 4:1/0 = 0
+4:1/0/script = null
 6:1/0 = 0
+6:1/0/script = null
 8:1/0 = 0
+8:1/0/script = null
 0:2/0 = 0
 0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+0:2/0/script = null
 1:2/0 = 0
 1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+1:2/0/script = null
 2:2/0 = 0
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+2:2/0/script = null
 3:2/0 = 0
+3:2/0/script = null
 5:2/0 = 0
+5:2/0/script = null
 7:2/0 = 0
+7:2/0/script = null
 9:2/0 = 0
+9:2/0/script = null
 0:3/0 = 0
+0:3/0/script = null
 2:3/0 = 0
+2:3/0/script = null
 4:3/0 = 0
+4:3/0/script = null
 6:3/0 = 0
+6:3/0/script = null
 8:3/0 = 0
+8:3/0/script = null
 1:4/0 = 0
+1:4/0/script = null
 3:4/0 = 0
+3:4/0/script = null
 5:4/0 = 0
+5:4/0/script = null
 7:4/0 = 0
+7:4/0/script = null
 9:4/0 = 0
+9:4/0/script = null
 
 [sub_resource type="TileSet" id="TileSet_4p0jq"]
 tile_size = Vector2i(64, 64)
@@ -65,37 +95,37 @@ offset_left = -3188.0
 offset_top = -6528.0
 offset_right = 6812.0
 offset_bottom = 3472.0
-texture = ExtResource("1_02uie")
+texture = ExtResource("1")
 stretch_mode = 1
 
 [node name="GamelayerTilemap" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAAAP3/AAAAAAAAAAAAAP7/AAAAAAEAAAAAAP//AAAAAAIAAAABAP3/AAABAAAAAAABAP7/AAABAAEAAAABAP//AAABAAIAAAACAP3/AAACAAAAAAACAP7/AAACAAEAAAACAP//AAACAAIAAAA=")
 tile_set = SubResource("TileSet_4p0jq")
 
-[node name="Character" parent="." instance=ExtResource("3_fksqx")]
+[node name="Character" parent="." instance=ExtResource("3")]
 position = Vector2(97, -268)
 
 [node name="Spikes" type="CanvasGroup" parent="."]
 
-[node name="Spike" parent="Spikes" instance=ExtResource("4_4p0jq")]
+[node name="Spike" parent="Spikes" instance=ExtResource("4")]
 position = Vector2(411, -2)
 
 [node name="Silver" type="CanvasGroup" parent="."]
 
-[node name="Silver" parent="Silver" instance=ExtResource("5_qcxce")]
+[node name="Silver" parent="Silver" instance=ExtResource("5")]
 position = Vector2(-271, -217)
 
 [node name="Labels" type="CanvasGroup" parent="."]
 
 [node name="Healthpacks" type="CanvasGroup" parent="."]
 
-[node name="Healthpack" parent="Healthpacks" instance=ExtResource("6_4autd")]
+[node name="Healthpack" parent="Healthpacks" instance=ExtResource("6")]
 position = Vector2(260, -48)
 
 [node name="GravityOrbs" type="CanvasGroup" parent="."]
 
-[node name="Gravity Orb" parent="GravityOrbs" instance=ExtResource("8_4p0jq")]
+[node name="Gravity Orb" parent="GravityOrbs" instance=ExtResource("7")]
 position = Vector2(232, -273)
 
-[node name="ExitDoor" parent="." instance=ExtResource("2_02uie")]
+[node name="ExitDoor" parent="." instance=ExtResource("8")]
 position = Vector2(317, -194)
