@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://bdirbhuxghheb"]
+[gd_scene load_steps=11 format=4 uid="uid://bdirbhuxghheb"]
 
 [ext_resource type="Texture2D" uid="uid://dpv3l8fum2hgm" path="res://images/End.jpg" id="1_rwetj"]
 [ext_resource type="Texture2D" uid="uid://bv86omlqgxj30" path="res://images/Tilemap64.png" id="2_h2dl5"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://17jlpnassayg" path="res://Objects/gravity_orb.tscn" id="5_ajely"]
 [ext_resource type="PackedScene" uid="uid://4n1c43i8d1ig" path="res://Objects/exit_door.tscn" id="6_3yu0n"]
 [ext_resource type="PackedScene" uid="uid://b04lqfbxi8g64" path="res://Objects/stargate.tscn" id="7_h2dl5"]
+[ext_resource type="PackedScene" uid="uid://c2kqqqsjlg8yi" path="res://Objects/spike.tscn" id="8_u74sm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fksqx"]
 texture = ExtResource("2_h2dl5")
@@ -59,10 +60,10 @@ sources/0 = SubResource("TileSetAtlasSource_fksqx")
 [node name="End" type="Node2D"]
 
 [node name="Background" type="TextureRect" parent="."]
-offset_left = -1049.0
-offset_top = -1393.0
-offset_right = 1360.0
-offset_bottom = 231.0
+offset_left = -1843.0
+offset_top = -1919.0
+offset_right = 2028.0
+offset_bottom = 649.0
 texture = ExtResource("1_rwetj")
 
 [node name="GamelayerTilemap" type="TileMapLayer" parent="."]
@@ -124,3 +125,13 @@ rotation = 3.14159
 
 [node name="Stargate" parent="." instance=ExtResource("7_h2dl5")]
 position = Vector2(482, -192)
+
+[node name="Spike2" parent="." instance=ExtResource("8_u74sm")]
+position = Vector2(-10622, 1463)
+scale = Vector2(60, 1)
+damage = 5
+
+[node name="Spike2_1" parent="Spike2" instance=ExtResource("8_u74sm")]
+position = Vector2(354.467, -4761)
+rotation = 3.14159
+damage = 5
