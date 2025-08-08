@@ -21,6 +21,11 @@ config/icon="res://images/icon.svg"
 Signaler="*res://Scripts/signaler.gd"
 Global="*res://Scripts/global.gd"
 
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="ignore"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
