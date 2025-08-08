@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dpv3l8fum2hgm" path="res://images/End.jpg" id="1_rwetj"]
 [ext_resource type="Texture2D" uid="uid://bv86omlqgxj30" path="res://images/Tilemap64.png" id="2_h2dl5"]
 [ext_resource type="PackedScene" uid="uid://flb8xv1teey1" path="res://Objects/Character.tscn" id="3_u74sm"]
-[ext_resource type="PackedScene" uid="uid://bv0uhxnwjx1el" path="res://Objects/silver.tscn" id="4_qpfp8"]
+[ext_resource type="PackedScene" uid="uid://bv0uhxnwjx1el" path="res://Objects/Silver.tscn" id="4_qpfp8"]
 [ext_resource type="PackedScene" uid="uid://17jlpnassayg" path="res://Objects/gravity_orb.tscn" id="5_ajely"]
 [ext_resource type="PackedScene" uid="uid://4n1c43i8d1ig" path="res://Objects/exit_door.tscn" id="6_3yu0n"]
 [ext_resource type="PackedScene" uid="uid://b04lqfbxi8g64" path="res://Objects/stargate.tscn" id="7_h2dl5"]
@@ -60,10 +60,10 @@ sources/0 = SubResource("TileSetAtlasSource_fksqx")
 [node name="End" type="Node2D"]
 
 [node name="Background" type="TextureRect" parent="."]
-offset_left = -1843.0
-offset_top = -1919.0
-offset_right = 2028.0
-offset_bottom = 649.0
+offset_left = -2428.0
+offset_top = -2445.0
+offset_right = 2613.0
+offset_bottom = 849.0
 texture = ExtResource("1_rwetj")
 
 [node name="GamelayerTilemap" type="TileMapLayer" parent="."]

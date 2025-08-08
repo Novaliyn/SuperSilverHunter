@@ -57,8 +57,3 @@ text = "0 Silver"
 layout_mode = 2
 texture = ExtResource("3_1bvp3")
 stretch_mode = 4
-
-[node name="Silver" type="Label" parent="HUD/HBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 33
-text = "0 Silver"

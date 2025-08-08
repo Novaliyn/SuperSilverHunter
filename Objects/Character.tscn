@@ -106,7 +106,7 @@ sprite_frames = SubResource("SpriteFrames_766v2")
 animation = &"Left"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(0.7, 0.7)
+zoom = Vector2(1.2, 1.2)
 process_callback = 0
 position_smoothing_enabled = true
 position_smoothing_speed = 8.0
