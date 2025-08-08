@@ -6,17 +6,17 @@ extends Area2D
 var Finished = 0
 
 func _ready():
-    sprite.play("Start")
+	sprite.play("Start")
 
 func _on_body_entered(body: Node2D):
-    if body is Character and Active == 1:
-        sprite.play("Use")
-        Finished = 1
+	if body.is_in_group("Player") and Active == 1:
+		sprite.play("Use")
+		Finished = 1
 
 
 func _on_animated_sprite_2d_animation_finished() -> void :
-    if Finished == 1:
-        Global.Level += 1
-        Signaler.changeLevel.emit(int(Global.Level))
-    else:
-        sprite.play("Standbye")
+	if Finished == 1:
+		Global.Level += 1
+		Signaler.changeLevel.emit(int(Global.Level))
+	else:
+		sprite.play("Standbye")

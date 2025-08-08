@@ -25,6 +25,10 @@ Global="*res://Scripts/global.gd"
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
+[global_group]
+
+Player=""
+
 [input]
 
 KEYA={

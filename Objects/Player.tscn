@@ -1,6 +1,6 @@
-[gd_scene load_steps=16 format=4 uid="uid://flb8xv1teey1"]
+[gd_scene load_steps=16 format=3 uid="uid://flb8xv1teey1"]
 
-[ext_resource type="Script" uid="uid://b34dih41gofeh" path="res://Scripts/Character.gd" id="1"]
+[ext_resource type="Script" uid="uid://b34dih41gofeh" path="res://Scripts/Player.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://d3h0nq3tinkkw" path="res://images/Character/Character.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://cw6vhtnij4t2y" path="res://images/Character/running_left.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://bwe4d6vde7yts" path="res://images/Character/running_right.png" id="4"]
@@ -90,7 +90,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Character" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 top_level = true
 script = ExtResource("1")
 
