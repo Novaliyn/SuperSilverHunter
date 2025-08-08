@@ -14,11 +14,11 @@ config/name="Super Silver hunter"
 run/main_scene="uid://tclry6q673e5"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/image="uid://bj5yckhhr1o6m"
-config/icon="res://images/icon.svg"
+config/icon="uid://bj5yckhhr1o6m"
 
 [autoload]
 
-Signaler="*res://Scripts/signaler.gd"
+Signaler="*res://scripts/signaler.gd"
 Global="*res://scripts/global.gd"
 
 [display]
