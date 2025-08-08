@@ -1,7 +1,8 @@
 [gd_scene load_steps=3 format=4 uid="uid://c2kqqqsjlg8yi"]
 
-[ext_resource type="Script" uid="uid://d17g6jnj3gwae" path="res://Scripts/spike.gd" id="1"]
+[ext_resource type="Script" uid="uid://d17g6jnj3gwae" path="res://scripts/spike.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://djg42vaj50tkj" path="res://images/Spike.png" id="2"]
+
 
 [node name="Spike" type="Area2D"]
 script = ExtResource("1")

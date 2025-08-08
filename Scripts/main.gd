@@ -26,7 +26,7 @@ func loadNewLevel(levelnumber):
 	Global.GravDirection = 1
 	var levelPath: String
 	if levelnumber is int:
-		levelPath = "res://Levels/Level%s.tscn" % str(levelnumber)
+		levelPath = "res://levels/level%s.tscn" % str(levelnumber)
 		var levelResource: PackedScene = load(levelPath)
 		if levelResource:
 			levelInstance = levelResource.instantiate()

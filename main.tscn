@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://tclry6q673e5"]
 
-[ext_resource type="Script" uid="uid://c4nghbj75v8we" path="res://Scripts/main.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://c4nghbj75v8we" path="res://scripts/main.gd" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://brd0s7rbofqws" path="res://images/HealthPack.png" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://bj5yckhhr1o6m" path="res://images/Silver.png" id="3_1bvp3"]
 
@@ -54,6 +54,7 @@ theme_override_font_sizes/font_size = 33
 text = "0 Silver"
 
 [node name="silver" type="TextureRect" parent="HUD/CanvasLayer/HBoxContainer"]
+texture_filter = 1
 layout_mode = 2
 texture = ExtResource("3_1bvp3")
 stretch_mode = 4

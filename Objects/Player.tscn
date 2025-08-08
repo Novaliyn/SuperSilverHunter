@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://flb8xv1teey1"]
 
-[ext_resource type="Script" uid="uid://b34dih41gofeh" path="res://Scripts/Player.gd" id="1"]
+[ext_resource type="Script" uid="uid://b34dih41gofeh" path="res://scripts/player.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://d3h0nq3tinkkw" path="res://images/Character/Character.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://cw6vhtnij4t2y" path="res://images/Character/running_left.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://bwe4d6vde7yts" path="res://images/Character/running_right.png" id="4"]
@@ -106,6 +106,8 @@ sprite_frames = SubResource("SpriteFrames_766v2")
 animation = &"Left"
 
 [node name="Camera2D" type="Camera2D" parent="."]
+texture_filter = 1
+zoom = Vector2(1.2, 1.2)
 process_callback = 0
 position_smoothing_enabled = true
 position_smoothing_speed = 8.0

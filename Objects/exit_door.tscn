@@ -1,8 +1,9 @@
 [gd_scene load_steps=18 format=4 uid="uid://4n1c43i8d1ig"]
 
-[ext_resource type="Script" uid="uid://brgj0vdbjp2me" path="res://Scripts/exit_door.gd" id="1"]
+[ext_resource type="Script" uid="uid://brgj0vdbjp2me" path="res://scripts/exit_door.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://d0lljc6qlkhg8" path="res://images/ExitDoor.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://ls3eqm1dexl8" path="res://images/ExitDoorA.png" id="3"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aumtq"]
 size = Vector2(64, 75)
