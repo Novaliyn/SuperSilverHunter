@@ -196,6 +196,18 @@ tracks/10/keys = {
 "update": 0,
 "values": [Vector2(9053, 1117), Vector2(10078, 1117)]
 }
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("../Spike4:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(10296, 645), Vector2(10296, 999)]
+}
 
 [sub_resource type="Animation" id="Animation_xxxi4"]
 length = 0.001
@@ -331,6 +343,18 @@ tracks/10/keys = {
 "update": 0,
 "values": [Vector2(9053, 1117)]
 }
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("../Spike4:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(10296, 645)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4c4gq"]
 _data = {
@@ -381,6 +405,52 @@ position = Vector2(7736, -1040)
 scale = Vector2(1, 0.2)
 damage = 4
 
+[node name="Spike4" parent="." instance=ExtResource("5_3e7p2")]
+position = Vector2(10296, 645)
+rotation = 3.14159
+scale = Vector2(0.2, 0.3)
+damage = 4
+
+[node name="Spike4_1" parent="Spike4" instance=ExtResource("5_3e7p2")]
+position = Vector2(-2920, 290)
+damage = 4
+
+[node name="Spike4_2" parent="Spike4" instance=ExtResource("5_3e7p2")]
+position = Vector2(-6085, 710)
+damage = 4
+
+[node name="Spike4_3" parent="Spike4" instance=ExtResource("5_3e7p2")]
+position = Vector2(-9280, 1453.33)
+damage = 4
+
+[node name="Spike4_4" parent="Spike4" instance=ExtResource("5_3e7p2")]
+position = Vector2(-11575, 2110)
+damage = 4
+
+[node name="Spike4_5" parent="Spike4" instance=ExtResource("5_3e7p2")]
+position = Vector2(-14130, 2726.67)
+damage = 4
+
+[node name="Spike4_6" parent="Spike4" instance=ExtResource("5_3e7p2")]
+position = Vector2(-16405, 3303.33)
+damage = 4
+
+[node name="Spike4_7" parent="Spike4" instance=ExtResource("5_3e7p2")]
+position = Vector2(-21155, 3290)
+damage = 4
+
+[node name="Spike4_8" parent="Spike4" instance=ExtResource("5_3e7p2")]
+position = Vector2(-23700, 4183.33)
+damage = 4
+
+[node name="Spike4_9" parent="Spike4" instance=ExtResource("5_3e7p2")]
+position = Vector2(-27845, 4366.67)
+damage = 4
+
+[node name="Spike4_10" parent="Spike4" instance=ExtResource("5_3e7p2")]
+position = Vector2(-31060, 6976.67)
+damage = 4
+
 [node name="Silver" type="CanvasGroup" parent="."]
 
 [node name="Silver" parent="Silver" instance=ExtResource("6_dxjb0")]
@@ -399,8 +469,7 @@ text = "WHEEEEEE. Challenging? :3"
 [node name="Healthpacks" type="CanvasGroup" parent="."]
 
 [node name="Healthpack" parent="Healthpacks" instance=ExtResource("7_hx0pg")]
-position = Vector2(2619, 1397)
-scale = Vector2(0.5, 0.5)
+position = Vector2(2546, 1458)
 
 [node name="GravityOrbs" type="CanvasGroup" parent="."]
 

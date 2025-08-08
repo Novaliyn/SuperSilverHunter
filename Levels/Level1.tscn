@@ -163,11 +163,11 @@ text = "Jumping while airborne will propell you further vertically."
 autowrap_mode = 3
 
 [node name="Spikes" type="Label" parent="Labels"]
-offset_left = 791.0
-offset_top = -815.0
-offset_right = 1242.0
-offset_bottom = -759.0
-text = "Beware, these new Goa'uld hak'tyl traps mean to take your life!"
+offset_left = 775.0
+offset_top = -814.0
+offset_right = 1268.0
+offset_bottom = -758.0
+text = "Beware, these new Goa'uld hak'tyl traps result in serious harm!"
 autowrap_mode = 3
 
 [node name="Fall" type="Label" parent="Labels"]
