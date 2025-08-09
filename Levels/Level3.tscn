@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://br24fxrtsjtph"]
+[gd_scene load_steps=25 format=4 uid="uid://br24fxrtsjtph"]
 
 [ext_resource type="Script" uid="uid://b8uiuy05sguxt" path="res://scripts/level_3.gd" id="1_cpuyl"]
 [ext_resource type="Texture2D" uid="uid://ymr1iw76ibv7" path="res://images/Background.png" id="2_mf7v1"]
@@ -11,6 +11,9 @@
 [ext_resource type="PackedScene" uid="uid://cjljfn8klfkkt" path="res://objects/moving_platform.tscn" id="9_c750c"]
 [ext_resource type="PackedScene" uid="uid://4n1c43i8d1ig" path="res://objects/exit_door.tscn" id="10_283cd"]
 [ext_resource type="PackedScene" uid="uid://b04lqfbxi8g64" path="res://objects/stargate.tscn" id="11_ulrxl"]
+[ext_resource type="Script" uid="uid://cy3ycqe5blbqu" path="res://scripts/powercore.gd" id="12_o0ax4"]
+[ext_resource type="Texture2D" uid="uid://d245dlx7an8wo" path="res://images/core_broken.png" id="13_nq7ub"]
+[ext_resource type="Texture2D" uid="uid://f8puetthyc3u" path="res://images/core_default.png" id="14_7ej46"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fksqx"]
 texture = ExtResource("3_7trqu")
@@ -59,6 +62,43 @@ texture_region_size = Vector2i(64, 64)
 tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_fksqx")
+
+[sub_resource type="Animation" id="Animation_cpuyl"]
+resource_name = "Spike"
+length = 85.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 28, 60, 85),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-2603, -3882), Vector2(2718, -3882), Vector2(8229, -3882), Vector2(16949, -3882)]
+}
+
+[sub_resource type="Animation" id="Animation_mf7v1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2603, -3882)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7trqu"]
+_data = {
+&"RESET": SubResource("Animation_mf7v1"),
+&"Spike": SubResource("Animation_cpuyl")
+}
 
 [sub_resource type="Animation" id="Animation_hy5j1"]
 resource_name = "Forward"
@@ -199,7 +239,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("../Spike4:position")
+tracks/11/path = NodePath("../Spikes/Spike4:position")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -346,7 +386,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("../Spike4:position")
+tracks/11/path = NodePath("../Spikes/Spike4:position")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -361,6 +401,28 @@ _data = {
 &"Forward": SubResource("Animation_hy5j1"),
 &"RESET": SubResource("Animation_xxxi4")
 }
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tq58f"]
+size = Vector2(82, 97)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k34hm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_nq7ub")
+}],
+"loop": true,
+"name": &"broken",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_7ej46")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
 
 [node name="Level3" type="Node2D"]
 script = ExtResource("1_cpuyl")
@@ -401,72 +463,84 @@ position = Vector2(362.917, -7759)
 rotation = 3.14159
 damage = 5
 
-[node name="Spike3" parent="." instance=ExtResource("5_nq7ub")]
-position = Vector2(7736, -1040)
-scale = Vector2(1, 0.2)
-damage = 4
-
-[node name="Spike4" parent="." instance=ExtResource("5_nq7ub")]
+[node name="Spike4" parent="Spikes" instance=ExtResource("5_nq7ub")]
 position = Vector2(10305, 973)
 rotation = 3.14159
 scale = Vector2(0.2, 0.3)
 damage = 4
 
-[node name="Spike4_1" parent="Spike4" instance=ExtResource("5_nq7ub")]
+[node name="Spike4_1" parent="Spikes/Spike4" instance=ExtResource("5_nq7ub")]
 position = Vector2(-2910, 213.334)
 damage = 4
 
-[node name="Spike4_2" parent="Spike4" instance=ExtResource("5_nq7ub")]
+[node name="Spike4_2" parent="Spikes/Spike4" instance=ExtResource("5_nq7ub")]
 position = Vector2(-6100, 633.334)
 damage = 4
 
-[node name="Spike4_3" parent="Spike4" instance=ExtResource("5_nq7ub")]
+[node name="Spike4_3" parent="Spikes/Spike4" instance=ExtResource("5_nq7ub")]
 position = Vector2(-9260, 1276.67)
 damage = 4
 
-[node name="Spike4_4" parent="Spike4" instance=ExtResource("5_nq7ub")]
+[node name="Spike4_4" parent="Spikes/Spike4" instance=ExtResource("5_nq7ub")]
 position = Vector2(-11505, 1916.67)
 damage = 4
 
-[node name="Spike4_5" parent="Spike4" instance=ExtResource("5_nq7ub")]
+[node name="Spike4_5" parent="Spikes/Spike4" instance=ExtResource("5_nq7ub")]
 position = Vector2(-14100, 2560)
 damage = 4
 
-[node name="Spike4_6" parent="Spike4" instance=ExtResource("5_nq7ub")]
+[node name="Spike4_6" parent="Spikes/Spike4" instance=ExtResource("5_nq7ub")]
 position = Vector2(-16325, 3196.67)
 damage = 4
 
-[node name="Spike4_7" parent="Spike4" instance=ExtResource("5_nq7ub")]
+[node name="Spike4_7" parent="Spikes/Spike4" instance=ExtResource("5_nq7ub")]
 position = Vector2(-18575, 1920)
 damage = 4
 
-[node name="Spike4_8" parent="Spike4" instance=ExtResource("5_nq7ub")]
+[node name="Spike4_8" parent="Spikes/Spike4" instance=ExtResource("5_nq7ub")]
 position = Vector2(-21170, 3190)
 damage = 4
 
-[node name="Spike4_9" parent="Spike4" instance=ExtResource("5_nq7ub")]
+[node name="Spike4_9" parent="Spikes/Spike4" instance=ExtResource("5_nq7ub")]
 position = Vector2(-23635, 4026.67)
 damage = 4
 
-[node name="Spike4_10" parent="Spike4" instance=ExtResource("5_nq7ub")]
+[node name="Spike4_10" parent="Spikes/Spike4" instance=ExtResource("5_nq7ub")]
 position = Vector2(-25620, 3183.33)
 damage = 4
 
-[node name="Spike4_11" parent="Spike4" instance=ExtResource("5_nq7ub")]
+[node name="Spike4_11" parent="Spikes/Spike4" instance=ExtResource("5_nq7ub")]
 position = Vector2(-27860, 4263.33)
 damage = 4
 
-[node name="Spike4_12" parent="Spike4" instance=ExtResource("5_nq7ub")]
+[node name="Spike4_12" parent="Spikes/Spike4" instance=ExtResource("5_nq7ub")]
 position = Vector2(-29110, 5126.67)
 damage = 4
 
-[node name="Spike4_13" parent="Spike4" instance=ExtResource("5_nq7ub")]
+[node name="Spike4_13" parent="Spikes/Spike4" instance=ExtResource("5_nq7ub")]
 position = Vector2(-30110, 5983.33)
 damage = 4
 
-[node name="Spike4_14" parent="Spike4" instance=ExtResource("5_nq7ub")]
+[node name="Spike4_14" parent="Spikes/Spike4" instance=ExtResource("5_nq7ub")]
 position = Vector2(-31040, 6833.33)
 damage = 4
+
+[node name="Spike3" parent="Spikes" instance=ExtResource("5_nq7ub")]
+position = Vector2(-2603, -3882)
+rotation = 1.5708
+scale = Vector2(20, 3)
+damage = 5
+
+[node name="Spike5" parent="Spikes" instance=ExtResource("5_nq7ub")]
+position = Vector2(7736, -1040)
+scale = Vector2(1, 0.2)
+damage = 4
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="Spikes"]
+root_node = NodePath("../Spike3")
+libraries = {
+&"": SubResource("AnimationLibrary_7trqu")
+}
 
 [node name="Silver" type="CanvasGroup" parent="."]
 
@@ -487,7 +561,6 @@ text = "WHEEEEEE. Challenging? :3"
 
 [node name="Healthpack" parent="Healthpacks" instance=ExtResource("7_tq58f")]
 position = Vector2(2619, 1397)
-scale = Vector2(0.5, 0.5)
 
 [node name="GravityOrbs" type="CanvasGroup" parent="."]
 
@@ -547,3 +620,21 @@ Active = 0
 position = Vector2(17247, -1153)
 scale = Vector2(2, 2)
 Enabled = 1
+
+[node name="PowerCore" type="Area2D" parent="."]
+position = Vector2(-495, 1725)
+script = ExtResource("12_o0ax4")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PowerCore"]
+position = Vector2(50, -48.5)
+shape = SubResource("RectangleShape2D_tq58f")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PowerCore"]
+texture_filter = 1
+position = Vector2(50, -49)
+scale = Vector2(3.125, 3.03125)
+sprite_frames = SubResource("SpriteFrames_k34hm")
+animation = &"broken"
+
+[connection signal="body_entered" from="PowerCore" to="PowerCore" method="_on_body_entered"]
