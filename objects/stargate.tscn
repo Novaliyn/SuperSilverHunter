@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b04lqfbxi8g64"]
+
+[ext_resource type="Script" uid="uid://bj7n1jwrjjujh" path="res://scripts/stargate.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bahi4gjnobwwo" path="res://images/Stargate.png" id="2"]
+
+[node name="Stargate" type="Area2D"]
+script = ExtResource("1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(62, -64)
+texture = ExtResource("2")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+texture_filter = 1
+position = Vector2(63, -33)
+scale = Vector2(3.92, 3.64)
+polygon = PackedVector2Array(-6.63265, 9.06594, 6.37755, 9.06594, 7.39796, 7.69231, 8.16327, 6.86813, 8.92857, 5.49451, 9.69388, 3.57143, 10.4592, 1.0989, 10.4592, -1.92308, 9.94898, -3.57143, 9.43878, -4.67033, 8.41837, -6.31868, 7.39796, -7.96704, 5.35714, -9.89011, 1.78572, -11.5385, 0.255102, -11.5385, -1.78571, -11.2637, -5.10204, -9.89011, -7.39796, -8.51649, -9.18367, -5.76923, -10.2041, -3.2967, -10.4592, -0.824177, -10.4592, 1.92308, -9.94898, 4.67033, -8.41837, 6.31868, -7.14286, 7.96703)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

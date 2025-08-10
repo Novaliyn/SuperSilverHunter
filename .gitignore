@@ -1,0 +1,9 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+/addons/
+/.editorconfig
+/.gitattrubutes
+/SuperSilverHunter.exe
+/rcedit-x64.exe
+/export_presets.cfg
