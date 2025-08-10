@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://flb8xv1teey1" path="res://objects/player.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://c2kqqqsjlg8yi" path="res://objects/spike.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://bv0uhxnwjx1el" path="res://objects/silver.tscn" id="5"]
-[ext_resource type="PackedScene" uid="uid://c4iiik1f6sp3h" path="res://objects/HealthPack.tscn" id="6"]
+[ext_resource type="PackedScene" uid="uid://c4iiik1f6sp3h" path="res://objects/healthPack.tscn" id="6"]
 [ext_resource type="PackedScene" uid="uid://17jlpnassayg" path="res://objects/gravity_orb.tscn" id="7"]
 [ext_resource type="PackedScene" uid="uid://4n1c43i8d1ig" path="res://objects/exit_door.tscn" id="8"]
 
