@@ -26,3 +26,22 @@ features added:
 - Door. 
 most challenging: really just trying to get level changine to work.
 next up: finish level changing, add levels, gravity stuff. 
+
+SHIP POST
+github repo: https://github.com/Novaliyn/SuperSilverHunter
+itch.io: https://novaliyn.itch.io/supersilverhunter
+gameplay video: https://www.youtube.com/watch?v=gnYoN6NErB0
+hours spent: 25.5 
+description: Navigate through the very last remaining mothership of the Goa'uld empire, collecting silver on the way to the ship's power core - sabotage it and escape, ending the Goa'uld once and for all! 
+features:
+- gravity orbs
+- moving platforms
+- spikes
+- moving spikes
+- doors
+- stargate
+- player animations for walking
+- TONS OF SILVER TO COLLECT
+- Energy core
+- speedrun level 3
+process: so i got the idea when friends came over, came up with. someone collecting silver. this is my first godot game, its been really fun so far. there is definitely alot more to learn! started small with different objects, then as i got to know the software more, i was able to start coding things like gravity orbs, or even the transportation rings. Im greatful for my friends for helping with the textures, and if i ever got really stuck on coding, the level switching was a challenge!
